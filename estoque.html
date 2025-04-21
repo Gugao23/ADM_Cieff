@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="styleE.css">
+    <link rel="shortcut icon" href="assets/logo-branca.png" type="image/x-icon">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo"><img src="assets/logo-branca.png" alt=""></div>
+        <nav>
+            <div class="nav-item" onclick="dashboard()">
+                <span class="icon">□</span>
+                Dashboard
+            </div>
+            <div class="nav-item active">
+                <span class="icon">≡</span>
+                Estoque
+            </div>
+            <div class="nav-item" onclick="cliente()">
+                <span class="icon">👤</span>
+                Clientes
+            </div>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="header">
+            <h1 class="page-title">Estoque</h1>
+            <div class="user-actions">
+                <a href="#">Admin</a>
+                <span><a href="login.html" id="sair">Sair</a></span>
+            </div>
+        </div>
+
+        <div class="summary-cards">
+            <div class="card card-1">
+                <div class="card-icon">📦</div>
+                <div class="card-info">
+                    <h3>Total</h3>
+                    <p>de produtos</p>
+                </div>
+            </div>
+            <div class="card card-2">
+                <div class="card-icon">⚠️</div>
+                <div class="card-info">
+                    <h3>Produtos</h3>
+                    <p>esgotando</p>
+                </div>
+            </div>
+            <div class="card card-3">
+                <div class="card-icon">🛒</div>
+                <div class="card-info">
+                    <h3>Vendas</h3>
+                    <p>no dia</p>
+                </div>
+            </div>
+            <div class="card card-4">
+                <div class="card-icon">💰</div>
+                <div class="card-info">
+                    <h3>Receita</h3>
+                    <p>no mês</p>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Categoria</th>
+                    <th>Tamanho</th>
+                    <th>Cor</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Produto A</td>
+                    <td>Camiseta</td>
+                    <td>M</td>
+                    <td>Preto</td>
+                    <td>22</td>
+                    <td>R$ 30,00</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Produto A</td>
+                    <td>Camiseta</td>
+                    <td>PP</td>
+                    <td>Preto</td>
+                    <td>11</td>
+                    <td>R$ 34,99</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Produto C</td>
+                    <td>Camiseta</td>
+                    <td>GG</td>
+                    <td>Vermelho</td>
+                    <td>8</td>
+                    <td>R$ 60,00</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Produto D</td>
+                    <td>Calça</td>
+                    <td>M</td>
+                    <td>Cinza</td>
+                    <td>6</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Produto F</td>
+                    <td>Camiseta</td>
+                    <td>G</td>
+                    <td>Preto</td>
+                    <td>6</td>
+                    <td>R$ 34,99</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="chart-container">
+            <div class="chart-header">
+                <h2 class="chart-title">Vendas por Produto</h2>
+                <div class="chart-filters">
+                    <button class="filter-btn active">Hoje</button>
+                    <button class="filter-btn">Semana</button>
+                    <button class="filter-btn">Mês</button>
+                </div>
+            </div>
+            <div class="chart">
+                <div class="chart-item">
+                    <div class="chart-bar" style="height: 70px;"></div>
+                    <div class="chart-label">Produto A</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="height: 60px;"></div>
+                    <div class="chart-label">Produto B</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="height: 90px;"></div>
+                    <div class="chart-label">Produto C</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="height: 75px;"></div>
+                    <div class="chart-label">Produto D</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="height: 100px;"></div>
+                    <div class="chart-label">Produto E</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="height: 65px;"></div>
+                    <div class="chart-label">Produto F</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="height: 60px;"></div>
+                    <div class="chart-label">Produto G</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-bar" style="height: 45px;"></div>
+                    <div class="chart-label">Produto H</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

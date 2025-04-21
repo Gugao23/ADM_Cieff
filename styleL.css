@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(17, 17, 17);
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+
+
+  .container{
+    display: flex;
+  }
+
+  #header{
+    position: relative;
+    z-index: 2;
+  }
+
+  #muieI, #headerI{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #header img{
+    position: absolute;
+    width: 80px;
+    margin-left: -300px;
+    z-index: 2;
+  }
+
+  #muie img{
+    position: absolute;
+    width: 952px;
+    height: 100%;
+    /*margin-left: -145px;*/
+    z-index: 1;
+  }
+
+  .L-S{
+    margin-top: 200px;
+    text-align: center;
+    float: right;
+  }
+
+  .L-S h1{
+    color: white;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  input {
+    margin-top: 20px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(41, 41, 41);
+  }
+  
+  input[type="password"] {
+    transition: width 0.4s ease-in-out;
+    color: white;
+  }
+  
+  
+  input[type="text"] {
+    transition: width 0.4s ease-in-out;
+    color: white;
+  }
+  
+  
+  #btnL:hover {
+    background-color: rgb(247, 247, 247);
+    color: rgb(77, 77, 77);
+    transition: 1s all;
+  }
+  #btnL{
+    color: gray;
+    height: 50px;
+    width: 50%;
+  }
+
+  #btnL {
+    margin-top: 20px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(41, 41, 41);
+  }
+
+  #btnC{
+    color: gray;
+    height: 50px;
+    width: 50%;
+  }
+
+  #btnC {
+    margin-top: 20px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(41, 41, 41);
+  }
+
+  .foot{
+
+    background-color: #404040;
+  }
+
+  #ftp{
+    margin-left: 25%;
+    margin-top: 5%;
+    color: white;
+  }
+
+  a:visited{
+    color: white;
+  }
+
+  #ftp:hover{
+    color: #d75413;
+    transition: 0.5s all;
+  }
+

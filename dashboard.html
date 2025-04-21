@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styleD.css">
+    <link rel="shortcut icon" href="assets/logo-branca.png" type="image/x-icon">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo"><img src="assets/logo-branca.png" alt=""></div>
+        <nav>
+            <div class="nav-item active">
+                <span class="icon">□</span>
+                Dashboard
+            </div>
+            <div class="nav-item" onclick="estoque()">
+                <span class="icon">≡</span>
+                Estoque
+            </div>
+            <div class="nav-item" onclick="cliente()">
+                <span class="icon">👤</span>
+                Clientes
+            </div>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="header">
+            <h1 class="page-title">Admin</h1>
+            <div class="user-actions">
+                <a href="#">Admin</a>
+                <span><a href="login.html" id="sair">Sair</a></span>
+            </div>
+        </div>
+
+        <div class="summary-cards">
+            <div class="card card-1">
+                <h3>Produtos em estoque</h3>
+                <div class="number">350</div>
+            </div>
+            <div class="card card-2">
+                <h3>Produtos esgotando</h3>
+                <div class="number">12</div>
+            </div>
+            <div class="card card-3">
+                <h3>Vendas do dia</h3>
+                <div class="number">27</div>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">Vendas</h2>
+            <select class="filter-select">
+                <option>Mês</option>
+                <option>Semana</option>
+                <option>Dia</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Tamanho</th>
+                    <th>Cor</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Camiseta</td>
+                    <td>M</td>
+                    <td>Vermelho</td>
+                    <td>4</td>
+                    <td>R$ 220,00</td>
+                    <td>A caminho</td>
+                </tr>
+                <tr>
+                    <td>1002</td>
+                    <td>Calça</td>
+                    <td>G</td>
+                    <td>Azul</td>
+                    <td>4</td>
+                    <td>R$ 105,00</td>
+                    <td>Em separação</td>
+                </tr>
+                <tr>
+                    <td>1003</td>
+                    <td>Moletom</td>
+                    <td>P</td>
+                    <td>Preto</td>
+                    <td>8</td>
+                    <td>R$ 200,00</td>
+                    <td>Esperando Pagamento</a></td>
+                </tr>
+                <tr>
+                    <td>1004</td>
+                    <td>Vestido</td>
+                    <td>M</td>
+                    <td>Verde</td>
+                    <td>3</td>
+                    <td>R$ 160,00</td>
+                    <td>A caminho</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-header">
+            <h2 class="section-title">Vendas</h2>
+        </div>
+
+        <div class="line-chart">
+            <svg viewBox="0 0 1000 200" preserveAspectRatio="none">
+                <path class="line-path" d="M0,150 C100,120 150,170 250,80 S400,150 500,100 S650,120 750,50 S900,100 1000,80"></path>
+            </svg>
+        </div>
+        <div class="chart-labels">
+            <div class="chart-label">Jan</div>
+            <div class="chart-label">Fev</div>
+            <div class="chart-label">Mar</div>
+            <div class="chart-label">Abr</div>
+            <div class="chart-label">Mai</div>
+        </div>
+    </main>
+</body>
+</html>

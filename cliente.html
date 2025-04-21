@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="styleC.css">
+    <link rel="shortcut icon" href="assets/logo-branca.png" type="image/x-icon">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo"><img src="assets/logo-branca.png" alt=""></div>
+        <nav>
+            <div class="nav-item" onclick="dashboard()">
+                <span class="icon">□</span>
+                Dashboard
+            </div>
+            <div class="nav-item" onclick="estoque()">
+                <span class="icon">≡</span>
+                Estoque
+            </div>
+            <div class="nav-item active">
+                <span class="icon orange-icon">👤</span>
+                Clientes
+            </div>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="header">
+            <h1 class="page-title">Clientes</h1>
+            <div class="user-actions">
+                <a href="#">Admin</a>
+                <span><a href="login.html" id="sair">Sair</a></span>
+            </div>
+        </div>
+
+        <div class="search-filters">
+            <input type="text" class="search-input" placeholder="Nome do cliente">
+            <input type="text" class="search-input" placeholder="Cidade">
+            <select class="filter-select">
+                <option>Estado</option>
+                <option>SP</option>
+                <option>RJ</option>
+                <option>PR</option>
+                <option>SC</option>
+            </select>
+            <button class="search-button">🔍</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>João Silva</td>
+                    <td>joaosilva@gmail.com</td>
+                    <td>(11) 92100-1234</td>
+                    <td>São Paulo</td>
+                    <td>SP</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Anna Paula</td>
+                    <td>anapau@gmail.com</td>
+                    <td>(21) 92904-5848</td>
+                    <td>Rio de Janeiro</td>
+                    <td>RJ</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>João Pedro</td>
+                    <td>jotape@gmail.com</td>
+                    <td>(68) 95505-0580</td>
+                    <td>Rio Branco</td>
+                    <td>AC</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Pedro Henrique</td>
+                    <td>ph123433@gmail.com</td>
+                    <td>(11) 91456-7131</td>
+                    <td>São Paulo</td>
+                    <td>SP</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
